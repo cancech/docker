@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  plex:
+    build:
+      context: .
+      args:
+        PLEX_CLAIM_TOKEN: $PLEX_CLAIM_TOKEN
+    container_name: plex
+    image: plexinc/pms-docker
+    restart: unless-stopped
+    environment:
+      - TZ=GMT-5
+      - PLEX_CLAIM=$PLEX_CLAIM_TOKEN
+    network_mode: host
+    volumes:
+      - ./config:/config
+      - ./transcode:/transcode
+      - /raid/Comic:/data/Comic
+      - /raid/Movie:/data/Movie
+      - /raid/Music:/data/Music
+      - /raid/Photos:/data/Photos
+      - /raid/TV_Show:/data/TV_Show
