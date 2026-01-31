@@ -5,4 +5,5 @@ This repository is an attempt to not lose or re-create the various Docker config
 | Name | Description |
 | ---  | ---         |
 |[Github Runner](./github-runner)|Docker configuration for creating a Github Runner, which can be used for the purpose of executing Github Actions in a self-hosted environment.|
+|[Homebridge](./homebridge)|Docker container configuration for running a [homebridge](https://homebridge.io/) instance with [SmartThings CLI](https://github.com/SmartThingsCommunity/smartthings-cli) pre-installed|
 |[Plex](./plex)|Docker Compose configuration for creating and starting (my) Plex Server. The configuration is reflective of my setup.|
