@@ -2,7 +2,7 @@
 In a nutshell, [Homebridge](https://homebridge.io/) is an [Apple Home](https://www.apple.com/home-app/) hub, which can be used to bridge other, non [Apple Home](https://www.apple.com/home-app/) compatible, devices so that they can be used in [Apple Home](https://www.apple.com/home-app/). Best description could be that of a "translator" allowing [Apple Home](https://www.apple.com/home-app/) to talk to things that it wouldn't otherwise understand.
 
 ## Setup
-The container setup is taken more or less straight from the (Homebridge documentation)[https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Docker#step-2-create-docker-compose-manifest] with tweaks made for my specific needs. The biggest difference would be the inclusion of additional elements which are desirable in my situation.
+The container setup is taken more or less straight from the [Homebridge documentation](https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Docker#step-2-create-docker-compose-manifest) with tweaks made for my specific needs. The biggest difference would be the inclusion of additional elements which are desirable in my situation.
 
 ### Creating the Container
 Standard `docker-compose` processes are employed, ergo to start the container simply run
